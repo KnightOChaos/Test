@@ -1,1 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Games</title>
+		<style>
+			:root{--bg:#0f1720;--card:#0b1220;--accent:#ff6b6b;--muted:#99a1ad}
+			html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071025 0%,var(--bg) 100%);color:#fff}
+			.wrap{max-width:980px;margin:3rem auto;padding:1.5rem}
+			header h1{margin:.25rem 0;font-size:1.8rem}
+			.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.25rem}
+			.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:1rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);display:flex;flex-direction:column;justify-content:space-between}
+			.card h3{margin:.1rem 0 .6rem;font-size:1.05rem}
+			.card p{margin:0;color:var(--muted);font-size:.95rem}
+			.card a{display:inline-block;margin-top:1rem;padding:.5rem .75rem;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+			footer{margin-top:2rem;color:var(--muted);font-size:.9rem}
+			.small{font-size:.85rem;color:var(--muted)}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<h1>🎮 Games</h1>
+				<div class="small">Click a game to open its page.</div>
+			</header>
+
+			<main>
+				<div class="grid">
+					<article class="card">
+						<div>
+							<h3>Doki Doki Literature Club</h3>
+							<p class="small">A short visual novel — click to open.</p>
+						</div>
+						<a href="ddlc/index.html">Open Game →</a>
+					</article>
+
+					<article class="card">
+						<div>
+							<h3>RetroBowl</h3>
+							<p class="small">Arcade-style football — click to open.</p>
+						</div>
+						<a href="retrobowl/index.html">Open Game →</a>
+					</article>
+
+					<article class="card">
+						<div>
+							<h3>Slow Roads</h3>
+							<p class="small">A relaxing driving game — click to open.</p>
+						</div>
+						<a href="slowroads/index.html">Open Game →</a>
+					</article>
+				</div>
+			</main>
+
+			<footer>
+				<div class="small">If the game doesn't open, make sure the referenced folder contains an <code>index.html</code> file.</div>
+			</footer>
+		</div>
+	</body>
+</html>
 
